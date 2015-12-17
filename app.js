@@ -11,12 +11,13 @@ var todos = require('./routes/todos');
 var cloud = require('./cloud');
 
 /*zhangrui*/
-var getToken = require('./leancloudcode/getToken');
-var getUser = require('./leancloudcode/getUser');
-var geoquery = require('./leancloudcode/geoquery')
+var getToken = require('./tlmserversdk/getToken');
+var getUser = require('./tlmserversdk/getUser');
+var geoquery = require('./tlmserversdk/geoquery');
 
 var wcOauth2 = require('./wechat/wcOauth2');
 var wechat = require('./wechat/wechat');
+var wcMenu = require('./wechat/wcMenu');
 
 var app = express();
 
@@ -64,8 +65,8 @@ var xmlBodyParser = function (req, res, next) {
   });
 };
 // 强制使用 https
-app.enable('trust proxy');
-app.use(AV.Cloud.HttpsRedirect());
+//app.enable('trust proxy');
+//app.use(AV.Cloud.HttpsRedirect());
 
 app.use(methodOverride('_method'))
 app.use(bodyParser.json());

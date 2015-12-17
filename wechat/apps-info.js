@@ -6,8 +6,8 @@
 module.exports = function(){
 	return [
 			{//正式环境
-				appid: 'wxe54b53d8fb59af50'
-				,secret: '3f8b653d6ab47e00fcfd8d1db5a6e461'
+				appid: 'wxb1bd8f9533eee8c5'
+				,secret: '43a76bdaf19ca546583b2c817592cd9e'
 			}
 			//{//测试环境
 			//	appid: 'wx944c6d85858042cb'
